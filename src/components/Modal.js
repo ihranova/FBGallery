@@ -21,8 +21,8 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
           animate={{ scale: 1 }}
           class="inline-block align-bottom bg-white rounded text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full z-20 relative"
         >
-          <div class="bg-white p-2">
-            <img src={selectedImg} alt="" />
+          <div class="bg-white p-1">
+            <img src={selectedImg} alt="" className="rounded" />
           </div>
         </motion.div>
       </div>

@@ -1,0 +1,67 @@
+[debug] [2021-11-13T17:54:31.716Z] ----------------------------------------------------------------------
+[debug] [2021-11-13T17:54:31.723Z] Command:       /home/ina/.nvm/versions/node/v14.17.0/bin/node /home/ina/.nvm/versions/node/v14.17.0/bin/firebase init
+[debug] [2021-11-13T17:54:31.724Z] CLI Version:   9.22.0
+[debug] [2021-11-13T17:54:31.724Z] Platform:      linux
+[debug] [2021-11-13T17:54:31.724Z] Node Version:  v14.17.0
+[debug] [2021-11-13T17:54:31.725Z] Time:          Sat Nov 13 2021 19:54:31 GMT+0200 (Eastern European Standard Time)
+[debug] [2021-11-13T17:54:31.725Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-13T17:54:31.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-13T17:54:31.750Z] > authorizing via signed-in user (ina.hranova@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /media/ina/New Volume/apps/fbgallery
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-11-13T17:54:42.809Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-11-13T17:54:43.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-11-13T17:54:43.326Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project fbgallery-850fd (fbgallery) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-11-13T17:55:02.482Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-11-13T17:55:02.563Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-11-13T17:55:02.563Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.4.1","browserURL":"https://www.gstatic.com/firebasejs/9.4.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.4.1/firebase.tgz"},"live":{"version":"9.4","browserURL":"https://www.gstatic.com/firebasejs/live/9.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.4.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.4.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.4.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.4.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.4.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.4.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.4.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.4.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.4.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.4.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /media/ina/New Volume/apps 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=809458092&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-11-13T17:55:26.765Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"6b14b280cf3077a50f79","redirect_uri":"http://localhost:9005","state":"809458092"}
+[debug] [2021-11-13T17:55:27.043Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 13 Nov 2021 17:55:26 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"d84a5700ff05a16056537256b7ecdf25\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"8714:0953:1BBC1D7:1D1FD8A:618FFC0E"}
+[debug] [2021-11-13T17:55:27.048Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-11-13T17:55:27.317Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-11-13T17:55:27.317Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ihranova","id":3736009,"node_id":"MDQ6VXNlcjM3MzYwMDk=","avatar_url":"https://avatars.githubusercontent.com/u/3736009?v=4","gravatar_id":"","url":"https://api.github.com/users/ihranova","html_url":"https://github.com/ihranova","followers_url":"https://api.github.com/users/ihranova/followers","following_url":"https://api.github.com/users/ihranova/following{/other_user}","gists_url":"https://api.github.com/users/ihranova/gists{/gist_id}","starred_url":"https://api.github.com/users/ihranova/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ihranova/subscriptions","organizations_url":"https://api.github.com/users/ihranova/orgs","repos_url":"https://api.github.com/users/ihranova/repos","events_url":"https://api.github.com/users/ihranova/events{/privacy}","received_events_url":"https://api.github.com/users/ihranova/received_events","type":"User","site_admin":false,"name":"Ina Hranova","company":"React Native Ninja","blog":"reactnativeninja.com","location":"Sofia, Bulgaria","email":"ina.hranova@gmail.com","hireable":true,"bio":"React/React Native Developer  + Wordpress Expert    ","twitter_username":null,"public_repos":57,"public_gists":5,"followers":4,"following":8,"created_at":"2013-03-01T08:34:37Z","updated_at":"2021-10-31T09:49:32Z","private_gists":0,"total_private_repos":27,"owned_private_repos":27,"disk_usage":461934,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as ihranova 
+[info] 
+[debug] [2021-11-13T17:55:33.753Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-13T17:55:33.965Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-13T17:55:33.966Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}

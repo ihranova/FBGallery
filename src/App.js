@@ -7,7 +7,6 @@ import useFirestore from "./hooks/useFirestore";
 function App() {
   const [selectedImg, setSelectedImg] = useState(null);
   const [docs] = useFirestore();
-  console.log("Docs", docs);
   return (
     <div className="container mx-auto px-4 overflow-x-hidden">
       <Title />
